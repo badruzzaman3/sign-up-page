@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sign up page</title>
+
+</head>
+<body>
+    <div id="container">
+        <h1>sign up</h1>
+        <form action="" id="formId">
+        <div id="from-content"> <label for="name">NAME:</label> <input type="text" id="nameId" name="name" placeholder="ENTER YOUR NAMR" ></div>
+        <div id="from-content"> <label for="profileImage">Profile image :</label> <input type="file" name="profileImage" id="imginput" onchange="previewFile()" ><img src="" alt="" height="50px" width="50px" > </div><br>
+        <div id="from-content"> <label for="phoneNumber">PHONE NUMBER:</label> <input type="number" name="phoneNumber" id="phoneNumberId" placeholder="ENERT YOUR PHONE NUMBER" ></div><br>
+        <div id="from-content"> <label for="email">EMAIL:</label> <input type="email" name="email" id="emailId" placeholder="ENTER YOUR EMAIL ID"></div><br>
+        <div id="from-content"> <label for="gender">GENDER:</label> <select name="gender" id="genderId"><option value="male">MALE</option><option value="female">FEMALE</option></select></div><br>
+        
+        <div id="from-content"> <label for="password">PASSWORD:</label> <input type="password" name="password" id="passId" placeholder="ENERT PASSWORD"></div><br>
+        <div id="from-content"> <label for="confpass">CONFIRME PASSWORD:</label> <input type="password" name="confpass" id="confpassId" placeholder="ENTER CONFIRM PASSWORD" ></div><br>
+        <div id="from-content" class="submitclass"><button type="submit" id="submitId">submit</button></div>
+        </form>
+    </div>
+    <div id="datalist">
+        <h1>data from local stroage</h1>
+        <div id="tabledata">
+            <table border="2" id="table">
+                <tr>
+                    <td class="tdata">NAME</th>
+                    <td class="tdata">profile Image</td>
+                    <td class="tdata">phone Number</td>
+                    <td class="tdata">EMAIL</td>
+                    <td class="tdata">GENDER</td>
+                    <td class="tdata">PASSWORD</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
